@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package 
+    xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Templates</id>
+        <version>$version$</version>
+        <authors>JonkyOps</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Package Description</description>
+    </metadata>
+    <files>
+        <file src="Templates\**" target="content" exclude="Templates\**\*.rtf" />
+        <file src="tools\**" target="tools" />
+    </files>
+</package>
