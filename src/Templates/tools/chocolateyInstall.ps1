@@ -1,10 +1,7 @@
 # using dbatools for running commands, see here: https://github.com/chocolatey/choco/issues/640
-Import-Module -Name 'DbaTools' -DisableNameChecking
-
 $SrcTemplatesFolder = "$PSScriptRoot/../content"
 
 Write-Verbose -Message "Getting destination template folder location"
-# $DstTemplatesFolder = (Invoke-Sqlcmd2 -ServerInstance $env:COMPUTERNAME -Query $Query).TemplateLocation
 $DstTemplatesFolder = "$env:Temp/templates"
 Write-Verbose -Message "Source template folder: $SrcTemplatesFolder"
 Write-Verbose -Message "Destination template folder: $DstTemplatesFolder"
